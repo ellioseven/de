@@ -1,7 +1,7 @@
 version: "2"
 services:
   php:
-    image: "digitalgardensydney/de_drupal:7.1-fpm"
+    image: "ellioseven/de_drupal:7.1"
     volumes:
       - ./etc/php/drush/.drush:/home/app/.drush
       - ./etc/php/drush/.acquia:/home/app/.acquia
@@ -13,7 +13,7 @@ services:
     environment:
       - SSH_AUTH_SOCK=/tmp/agent.sock
   httpd:
-    image: "digitalgardensydney/de_apache:2.4"
+    image: "ellioseven/de_apache:2.4"
     depends_on:
       - php
       - db
@@ -38,7 +38,7 @@ services:
       - "80"
       - "1025"
   node:
-    image: "digitalgardensydney/de_node:8"
+    image: "ellioseven/de_node:8"
     volumes:
       - ./src:/home/app/src
       - ./lib/npm:/home/app/.npm-packages
