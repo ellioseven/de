@@ -1,2 +1,2 @@
-/srv
-/opt/**/lib
+/src
+/services/**/lib
