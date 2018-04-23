@@ -4,9 +4,8 @@
 
 This is a flexible and highly configurable Drupal development environment.
 
-This repository acts as a boilerplate for a  simple and sharable environment for
-Drupal developers and teams. Environments should be as easy as cloning and
-then booting them up.
+The repository acts as a starting point for a simple and sharable environment.
+Environments should be as easy as cloning and booting up.
 
 ## Compatibility
 
