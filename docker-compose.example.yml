@@ -30,5 +30,5 @@ volumes:
   app:
     driver_opts:
       type: none
-      device: ${PWD}/srv
+      device: ${PWD}/src
       o: bind
