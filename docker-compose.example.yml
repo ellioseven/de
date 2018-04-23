@@ -18,6 +18,10 @@ services:
     extends:
       file: ./services/php/docker-compose.php.yml
       service: php
+  mail:
+    extends:
+      file: ./services/mail/docker-compose.mail.yml
+      service: mail
 volumes:
   app:
     driver_opts:
