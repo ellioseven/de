@@ -1,7 +1,0 @@
-version: "2"
-services:
-  node:
-    image: "ellioseven/de-node:8"
-    volumes:
-      - app:/home/app/src
-      - ./lib/npm:/home/app/.npm-packages
