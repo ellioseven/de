@@ -22,6 +22,10 @@ services:
     extends:
       file: ./services/mail/docker-compose.mail.yml
       service: mail
+  solr:
+    extends:
+      file: ./services/solr/docker-compose.solr.yml
+      service: solr
 volumes:
   app:
     driver_opts:
