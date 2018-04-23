@@ -2,21 +2,21 @@ version: "2"
 services:
   apache:
     extends:
-      file: ./opt/apache/docker-compose.apache.yml
+      file: ./services/apache/docker-compose.apache.yml
       service: apache
     extra_hosts:
       - "example.local:127.0.0.1"
   mysql:
     extends:
-      file: ./opt/mysql/docker-compose.mysql.yml
+      file: ./services/mysql/docker-compose.mysql.yml
       service: mysql
   node:
     extends:
-      file: ./opt/node/docker-compose.node.yml
+      file: ./services/node/docker-compose.node.yml
       service: node
   php:
     extends:
-      file: ./opt/php/docker-compose.php.yml
+      file: ./services/php/docker-compose.php.yml
       service: php
 volumes:
   app:
