@@ -1,0 +1,10 @@
+version: "2"
+services:
+  php:
+    image: "ellioseven/de-drupal:7.1"
+    volumes:
+      - app:/home/app/src
+      - ./lib/composer:/home/app/.composer
+      - $SSH_AUTH_SOCK:/tmp/agent.sock:ro
+    environment:
+      - SSH_AUTH_SOCK=/tmp/agent.sock

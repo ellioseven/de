@@ -1,0 +1,11 @@
+version: "2"
+services:
+  mail:
+    image: "mailhog/mailhog"
+    user: root
+    environment:
+      MH_API_BIND_ADDR: "0.0.0.0:80"
+      MH_UI_BIND_ADDR: "0.0.0.0:80"
+    ports:
+      - "80"
+      - "1025"

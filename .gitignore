@@ -1,15 +1,2 @@
-docker-compose.override.yml
-
-/lib/*
-!/lib/.gitkeep
-!/lib/composer/.gitkeep
-!/lib/mysql/.gitkeep
-!/lib/npm/.gitkeep
-
-/src/*
-!/src/.gitkeep
-
-/tmp/*
-!/tmp/.gitkeep
-
-etc/php/drush/.drush/cache/
+/srv
+/opt/**/lib
