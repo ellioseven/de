@@ -5,7 +5,7 @@ services:
       file: ./services/apache/docker-compose.yml
       service: apache
     extra_hosts:
-      - "example.local:127.0.0.1"
+      - "drupal.local:127.0.0.1"
   mysql:
     extends:
       file: ./services/mysql/docker-compose.yml
@@ -22,10 +22,14 @@ services:
     extends:
       file: ./services/mail/docker-compose.yml
       service: mail
+    extra_hosts:
+      - "mail.local:127.0.0.1"
   solr:
     extends:
       file: ./services/solr/docker-compose.yml
       service: solr
+    extra_hosts:
+      - "solr.local:127.0.0.1"
 volumes:
   app:
     driver_opts:
