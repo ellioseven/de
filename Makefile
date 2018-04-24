@@ -1,2 +1,5 @@
 up:
-	@./bin/docker-up.sh
+	./bin/docker-up.sh
+
+host:
+	./bin/docker-host.sh ${SERVICE}

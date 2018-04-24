@@ -1,8 +1,0 @@
-version: "2"
-services:
-  httpd:
-    extra_hosts:
-      - "example.local:127.0.0.1"
-  mail:
-    extra_hosts:
-      - "mail.example.local:127.0.0.1"

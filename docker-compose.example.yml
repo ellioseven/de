@@ -1,0 +1,38 @@
+version: "2"
+services:
+  apache:
+    extends:
+      file: ./services/apache/docker-compose.yml
+      service: apache
+    extra_hosts:
+      - "drupal.local:127.0.0.1"
+  mysql:
+    extends:
+      file: ./services/mysql/docker-compose.yml
+      service: mysql
+  node:
+    extends:
+      file: ./services/node/docker-compose.yml
+      service: node
+  php:
+    extends:
+      file: ./services/php/docker-compose.yml
+      service: php
+  mail:
+    extends:
+      file: ./services/mail/docker-compose.yml
+      service: mail
+    extra_hosts:
+      - "mail.local:127.0.0.1"
+  solr:
+    extends:
+      file: ./services/solr/docker-compose.yml
+      service: solr
+    extra_hosts:
+      - "solr.local:127.0.0.1"
+volumes:
+  app:
+    driver_opts:
+      type: none
+      device: ${PWD}/src
+      o: bind
