@@ -1,3 +1,1 @@
 /src
-/services/**/lib/*
-!/services/**/lib/.gitkeep
