@@ -12,7 +12,7 @@ Environments should be as easy as cloning and booting up.
 Currently only tested on Linux, but should run on UNIX like systems such as
 MacOS.
 
-## New Project Setup
+## Setup
 
 ### 0. Clone
 
