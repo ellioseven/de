@@ -36,3 +36,8 @@ volumes:
       type: none
       device: ${PWD}/src
       o: bind
+  docroot:
+    driver_opts:
+      type: none
+      device: ${PWD}/src/docroot
+      o: bind
