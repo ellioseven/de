@@ -24,8 +24,6 @@
 #     extends:
 #       file: ./services/solr/docker-compose.yml
 #       service: solr
-#     extra_hosts:
-#       - "solr.local:127.0.0.1"
 volumes:
   app:
     driver_opts:
