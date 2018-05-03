@@ -3,4 +3,4 @@ services:
   apache:
     image: "ellioseven/de-apache:2.4"
     volumes:
-      - docroot:/home/app/src/docroot
+      - app:/home/app/src
