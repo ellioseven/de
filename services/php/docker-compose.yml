@@ -2,6 +2,7 @@ version: "2"
 services:
   php:
     image: "ellioseven/de-drupal:7.1"
+    user: app
     volumes:
       - app:/home/app/src
       - ./lib/composer:/home/app/.composer

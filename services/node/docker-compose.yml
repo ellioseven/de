@@ -2,6 +2,7 @@ version: "2"
 services:
   node:
     image: "ellioseven/de-node:8"
+    user: app
     volumes:
       - app:/home/app/src
       - ./lib/npm:/home/app/.npm-packages
