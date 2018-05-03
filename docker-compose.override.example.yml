@@ -1,0 +1,11 @@
+version: "2"
+services:
+  apache:
+    extra_hosts:
+      - "drupal.local:127.0.0.1"
+  mail:
+    extra_hosts:
+      - "mail.local:127.0.0.1"
+  solr:
+    extra_hosts:
+      - "solr.local:127.0.0.1"
