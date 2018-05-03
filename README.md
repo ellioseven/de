@@ -84,9 +84,8 @@ git add docker-compose.yml
 git commit -m "Add docker-compose.yml"
 ```
 
-To add local specific Docker configuration (eg: extra hosts):
-
-Copy `docker-compose.override.example.yml` and rename to `docker-compose.override`.
+To add local specific Docker configuration (eg: extra hosts, tunnel, etc.), copy
+`docker-compose.override.example.yml` and rename to `docker-compose.override.yml`.
 
 ### 3. Fire It Up
 
