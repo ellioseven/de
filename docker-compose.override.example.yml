@@ -11,7 +11,7 @@
 #       - "solr.local:127.0.0.1"
 #   ngrok:
 #       extends:
-#         file: ./services/tunnel/docker-compose.yml
+#         file: ./services/ngrok/docker-compose.yml
 #         service: ngrok
 #       extra_hosts:
 #         - "ngrok.local:127.0.0.1"
