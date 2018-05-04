@@ -39,34 +39,37 @@ rm -rf .git
 
 ### 1. Source Build
 
-To clone an existing project:
+**Note:** Build docroot must live at `src/docroot`.
 
-```
-git clone <url> src
-```
-
-**Note:** Your docroot must live at `src/docroot`.
-
-To create a new project:
+To create a new build:
 
 ```
 mkdir -p src/docroot
 echo "<?php phpinfo();" >> src/docroot/index.php
 ```
 
-At this point you can choose to either merge your project into a single
-repository, or keep two seperate repositories for the environment and the build.
-
-If you wish to keep your project in a single repository:
+To clone an existing build:
 
 ```
+git clone <url> src
+```
+
+#### Build VCS
+
+You can choose to combine the build and environment into a single repository, or
+keep two seperate repositories for the environment and the build.
+
+If you wish to keep your build and environment in a single repository:
+
+```
+# For existing builds, move .git into environment
+# mv src/.git ./
 sed -i 's/\/src//g' .gitignore
-mv src/.git ./
 git add --all
-git commit -m ""
+git commit -m "Initialise environment"
 ```
 
-If you wish to have seperate repositories:
+If you wish to have seperate repositories for your build and environment:
 
 ```
 git init
