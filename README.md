@@ -23,7 +23,7 @@ MacOS.
 - node
 - php-fpm
 - solr
-- tunnel
+- ngrok
 
 See the `README.md` in each service for more specific service documentation.
 
