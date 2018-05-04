@@ -20,10 +20,10 @@ MacOS.
 - apache
 - mailhog
 - mysql
+- ngrok
 - node
 - php-fpm
 - solr
-- ngrok
 
 See the `README.md` in each service for more specific service documentation.
 
