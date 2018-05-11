@@ -10,7 +10,6 @@ image. Differences include:
 - An app user, which is mapped to UID 1000 for permission synchronisation
 - Extra PHP extensions: `gd`, `mbstring`, `opcache`, `pdo`, `pdo_mysql`, `zip`
 - Composer. More information below.
-- Helper scripts. [See image for more information](https://hub.docker.com/r/ellioseven/de-drupal/)
 - Xdebug
 
 ## Volumes
@@ -24,6 +23,9 @@ Global packages are installed to `/home/app/.composer` with their binaries added
 to `$PATH`. These are mounted to `./lib/composer` on the host machine for
 persistance and is ignored by VCS. `src/docroot/vendor/bin` has been added to
 the path for the `app` user.
+
+[prestissimo](https://github.com/hirak/prestissimo) has also been installed to
+help speed up package install times.
 
 **Note:** Binaries such as `drush` or `drupal-console` should be added installed
 and managed by your build, not globally.
