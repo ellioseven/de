@@ -1,0 +1,2 @@
+/lib/npm/*
+!/lib/npm/.gitkeep

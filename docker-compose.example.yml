@@ -1,0 +1,32 @@
+# version: "2"
+# services:
+#   apache:
+#     extends:
+#       file: ./.de/services/apache/docker-compose.yml
+#       service: apache
+#   mysql:
+#     extends:
+#       file: ./.de/services/mysql/docker-compose.yml
+#       service: mysql
+#   node:
+#     extends:
+#       file: ./.de/services/node/docker-compose.yml
+#       service: node
+#   php:
+#     extends:
+#       file: ./.de/services/php/docker-compose.yml
+#       service: php
+#   mail:
+#     extends:
+#       file: ./.de/services/mail/docker-compose.yml
+#       service: mail
+#   solr:
+#     extends:
+#       file: ./.de/services/solr/docker-compose.yml
+#       service: solr
+# volumes:
+#   app:
+#     driver_opts:
+#       type: none
+#       device: ${PWD}/src
+#       o: bind
