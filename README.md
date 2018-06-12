@@ -41,7 +41,7 @@ git init
 
 ```
 # Clone de.
-git submodule add <git-location> .de
+git submodule add git@github.com:ellioseven/de.git .de
 
 # Create configuration.
 cp .de/.gitignore.example .gitignore
