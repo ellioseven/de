@@ -1,7 +1,5 @@
 # Drupal Development Environment
 
-Version 0.0.1
-
 ## About
 
 This is a flexible and highly configurable docker based Drupal development
