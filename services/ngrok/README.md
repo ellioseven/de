@@ -27,12 +27,11 @@ services:
 Start the ngrok service:
 
 ```
-make up
-make SERVICE=tunnel host
+./.de/bin/docker-up.sh
+./.de/bin/docker-host.sh ngrok
 ```
 
-Running `make up` will create the tunnel. The web interface should be viewable
-at `<url>:4040`.
+The web interface should be viewable at `<url>:4040`.
 
 ### Replacements:
 
