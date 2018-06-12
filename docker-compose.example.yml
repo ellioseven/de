@@ -2,31 +2,31 @@
 # services:
 #   apache:
 #     extends:
-#       file: ./services/apache/docker-compose.yml
+#       file: ./.de/services/apache/docker-compose.yml
 #       service: apache
 #   mysql:
 #     extends:
-#       file: ./services/mysql/docker-compose.yml
+#       file: ./.de/services/mysql/docker-compose.yml
 #       service: mysql
 #   node:
 #     extends:
-#       file: ./services/node/docker-compose.yml
+#       file: ./.de/services/node/docker-compose.yml
 #       service: node
 #   php:
 #     extends:
-#       file: ./services/php/docker-compose.yml
+#       file: ./.de/services/php/docker-compose.yml
 #       service: php
 #   mail:
 #     extends:
-#       file: ./services/mail/docker-compose.yml
+#       file: ./.de/services/mail/docker-compose.yml
 #       service: mail
 #   solr:
 #     extends:
-#       file: ./services/solr/docker-compose.yml
+#       file: ./.de/services/solr/docker-compose.yml
 #       service: solr
-volumes:
-  app:
-    driver_opts:
-      type: none
-      device: ${PWD}/src
-      o: bind
+# volumes:
+#   app:
+#     driver_opts:
+#       type: none
+#       device: ${PWD}/src
+#       o: bind
